@@ -3,9 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/colors": "7.0.0",
+    "@ant-design/icons": "5.0.1",
     "@emotion/react": "11.10.6",
     "@emotion/styled": "11.10.6",
     "@fontsource/roboto": "4.5.8",
+    "@fortawesome/fontawesome-svg-core": "6.4.0",
+    "@fortawesome/free-brands-svg-icons": "6.4.0",
+    "@fortawesome/react-fontawesome": "0.2.0",
     "@mui/icons-material": "5.11.11",
     "@mui/material": "5.11.15",
     "@mui/styled-engine-sc": "5.11.11",
@@ -22,6 +27,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "fg-loadcss": "3.1.0",
     "formik": "^2.2.9",
+    "history": "5.3.0",
     "i18next": "^22.4.13",
     "i18next-browser-languagedetector": "^7.0.1",
     "i18next-scanner": "4.2.0",
@@ -31,6 +37,7 @@
     "lint-staged": "13.2.0",
     "lodash": "4.17.21",
     "lottie-react": "^2.4.0",
+    "lru-cache": "8.0.4",
     "node-plop": "^0.31.1",
     "plop": "^3.1.2",
     "prettier": "^2.8.7",
@@ -60,7 +67,8 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0",
     "url-template": "^3.1.0",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -71,9 +79,9 @@
     "checkTs": "tsc --noEmit",
     "eslint": "eslint --ext js,jsx",
     "lint": "yarn run eslint src",
-    "lint:fix": "yarn run eslint --fix src",
+    "lint:fix": " yarn run prettify && yarn run eslint --fix src",
     "lint:css": "stylelint src/**/*.css",
-    "prettify": "prettier --write"
+    "prettify": "prettier --write ."
   },
   "eslintConfig": {
     "extends": [
