@@ -9,8 +9,7 @@ export default function HomePage(props) {
   const dispatch = useDispatch();
   const state = useSelector(selectHome);
 
-  useEffect(() => {
-  });
+  useEffect(() => {});
 
   const handleClick = () => {
     console.log('click');
@@ -23,7 +22,7 @@ export default function HomePage(props) {
         <title>HomePage</title>
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
-      <button onClick={handleClick}>123123123</button>
+      <button onClick={handleClick}>Click me</button>
       <span>My HomePage</span>
     </>
   );

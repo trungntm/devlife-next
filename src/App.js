@@ -3,8 +3,7 @@ import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import { GlobalStyle } from 'styles/global-styles';
 import './App.css';
 import { useTranslation } from 'react-i18next';
-import { default as HomePage } from 'pages/Home/HomePage';
-import Home from "./pages/Home/Loadable";
+import Home from './app/pages/Home/Loadable';
 
 function App() {
   const { i18n } = useTranslation();
